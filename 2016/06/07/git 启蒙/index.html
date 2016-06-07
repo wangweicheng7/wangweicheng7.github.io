@@ -5,15 +5,31 @@
   
   <title>陌上一梦觅琴音</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta name="description" content="Git 启蒙
+Git 是一个分布式的版本控制和源代码管理系统，强调速度。 Git 最初由Linus Torvalds设计和开发为Linux内核开发管理代码。 Git是GNU通用公共许可证版本2的条款下分发的免费软件。
+
+配置
+配置用户账户信息
+  12git config --global user.name &amp;quot;陌上一梦觅琴音&amp;quot; // 设置用户名git config --glo">
+<meta property="og:type" content="article">
 <meta property="og:title" content="陌上一梦觅琴音">
-<meta property="og:url" content="http://wangweicheng7.github.io/index.html">
+<meta property="og:url" content="http://wangweicheng7.github.io/2016/06/07/git 启蒙/index.html">
 <meta property="og:site_name" content="陌上一梦觅琴音">
-<meta property="og:description">
+<meta property="og:description" content="Git 启蒙
+Git 是一个分布式的版本控制和源代码管理系统，强调速度。 Git 最初由Linus Torvalds设计和开发为Linux内核开发管理代码。 Git是GNU通用公共许可证版本2的条款下分发的免费软件。
+
+配置
+配置用户账户信息
+  12git config --global user.name &amp;quot;陌上一梦觅琴音&amp;quot; // 设置用户名git config --glo">
+<meta property="og:updated_time" content="2016-06-07T02:20:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="陌上一梦觅琴音">
-<meta name="twitter:description">
+<meta name="twitter:description" content="Git 启蒙
+Git 是一个分布式的版本控制和源代码管理系统，强调速度。 Git 最初由Linus Torvalds设计和开发为Linux内核开发管理代码。 Git是GNU通用公共许可证版本2的条款下分发的免费软件。
+
+配置
+配置用户账户信息
+  12git config --global user.name &amp;quot;陌上一梦觅琴音&amp;quot; // 设置用户名git config --glo">
   
     <link rel="alternate" href="/atom.xml" title="陌上一梦觅琴音" type="application/atom+xml">
   
@@ -62,9 +78,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-git 启蒙" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-git 启蒙" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/07/git 启蒙/" class="article-date">
   <time datetime="2016-06-07T02:20:00.000Z" itemprop="datePublished">2016-06-07</time>
@@ -148,152 +162,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-为你的mac瘦身的几条建议" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/31/为你的mac瘦身的几条建议/" class="article-date">
-  <time datetime="2016-05-31T07:31:26.000Z" itemprop="datePublished">2016-05-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="为你的-Mac-瘦身的几条建议"><a href="#为你的-Mac-瘦身的几条建议" class="headerlink" title="为你的 Mac 瘦身的几条建议"></a>为你的 Mac 瘦身的几条建议</h2><blockquote>
-<p>rm -rf 彻底删除文件，使用许谨慎</p>
-</blockquote>
-<p>###禁用 SafeSleep，</p>
-<ul>
-<li><p>SafeSleep休眠模式即当Mac休眠或者没电池时会将内存中的内容储存在硬盘上的sleepimage文件上。sleepimage文件与Mac电脑的内存一样大，这意味着如果你的内存是4GB，该文件就有4GB，如果是16GB，该文件就有16GB。关闭SafeSleep可以不让系统自动创建该文件，<strong>缺点就是当Mac电脑没电池时，你不能恢复到之前的状态，但能节省出4GB-16GB空间。</strong>不过我们可以使用OS X的自动保存功能在电池将要耗尽的时候保存自己的工作。</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo pmset -a hibernatemode 0</span><br><span class="line">cd /private/var/vm/</span><br><span class="line">sudo rm sleepimage</span><br><span class="line">touch sleepimage</span><br><span class="line">chmod 000 /private/var/vm/sleepimage</span><br><span class="line">// 如果要重新启用的话</span><br><span class="line">sudo pmset -a hibernatemode 3</span><br><span class="line">sudo rm /private/var/vm/sleepimage</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="移除系统嗓音文件"><a href="#移除系统嗓音文件" class="headerlink" title="移除系统嗓音文件"></a>移除系统嗓音文件</h3><ul>
-<li><p>如果你不适用文字转语音功能，那么你肯定不会使用到OS X内置的嗓音文件。你可以删除这些文件重新获得硬盘空间。在终端应用中，使用下面的命令即可，<strong>如果你执行了命令,可以节省出500MB-3GB+硬盘空间，但你将无法使用系统的文字转语音功能。</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /System/Library/Speech/</span><br><span class="line">// 删除所有噪音文件</span><br><span class="line">sudo rm -rf Voices/*</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="删除所有系统日志"><a href="#删除所有系统日志" class="headerlink" title="删除所有系统日志"></a>删除所有系统日志</h3><ul>
-<li><p>使用Mac的时间越来越长，系统日志文件会越来越多，根据电脑的用量、错误和服务，这些文件会越来越多。这些系统日志文件是用来调试和排除故障的，如果你感觉没有用，可以使用下面的命令删除，<strong>可以节省出100MB-2GB硬盘空间.</strong>系统日志文件会不断的产生，所以你可以定时执行这条命令</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /private/var/log/*</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="删除快速查看生成的缓存文件"><a href="#删除快速查看生成的缓存文件" class="headerlink" title="删除快速查看生成的缓存文件"></a>删除快速查看生成的缓存文件</h3><ul>
-<li><p>快速查看功能是OS X系统内置的文件预览功能，即选中文件后点击空格来查看文件的简介详情。不过快速查看功能依靠缓存功能才能更流畅，而且这些缓存文件会一直增加，通过下面的命令移除缓存，<strong>可以节省出100MB-300MB硬盘空间</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /private/var/folders/</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="删除Emacs"><a href="#删除Emacs" class="headerlink" title="删除Emacs"></a>删除Emacs</h3><ul>
-<li><p>Emacs是终端中的文本编辑器，如果你使用的固态硬盘空间实在太小，那么删除它就是不错的选择，<strong>可以节省出60MB+的硬盘空间</strong>，况且你还可以使用vim和nano在终端中编辑文本。</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /usr/share/emacs/</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="清除缓存文件"><a href="#清除缓存文件" class="headerlink" title="清除缓存文件"></a>清除缓存文件</h3><ul>
-<li><p>缓存文件有很多种，网页浏览记录，应用meta数据等等。这些缓存文件的容量究竟多大跟用户使用的应用有关，也与Mac重启的频率有关。此外，很多在线音乐播放app也会产生大量的缓存文件，我们可以通过下面的命令删除这些缓存文件，<strong>可以节省1GB-10GB硬盘空间</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/Library/Caches/</span><br><span class="line">rm -rf ~/Library/Caches/*</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+  
+    <a href="/2016/05/31/为你的mac瘦身的几条建议/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wangweicheng7.github.io/2016/05/31/为你的mac瘦身的几条建议/" data-id="ciov4msen000040euo2v2wpmp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-测试文章一篇" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/31/测试文章一篇/" class="article-date">
-  <time datetime="2016-05-31T02:01:21.000Z" itemprop="datePublished">2016-05-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/31/测试文章一篇/">测试文章一篇</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这是一篇测试文章</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wangweicheng7.github.io/2016/05/31/测试文章一篇/" data-id="ciov4msey000240eu31fqzkf8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/31/hello-world/" class="article-date">
-  <time datetime="2016-05-31T01:58:51.000Z" itemprop="datePublished">2016-05-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wangweicheng7.github.io/2016/05/31/hello-world/" data-id="ciov4mseu000140eu488vozj4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
